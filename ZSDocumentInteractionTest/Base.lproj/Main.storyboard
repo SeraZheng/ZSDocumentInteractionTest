@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rEW-Uv-lcG">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Test -->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGQ-Pe-kGP">
+                                <rect key="frame" x="40" y="84" width="520" height="40"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Hcx-pK-KeJ"/>
+                                </constraints>
+                                <state key="normal" title="UIActivityViewController"/>
+                                <connections>
+                                    <action selector="presentActivityView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cuK-YK-6rs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZI8-te-ohd">
+                                <rect key="frame" x="40" y="164" width="520" height="40"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="6lI-9X-vl7"/>
+                                </constraints>
+                                <state key="normal" title="UIDocumentInteractionController (PNG)"/>
+                                <connections>
+                                    <action selector="presentPGNDocumentInteraction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9kJ-vy-yWp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DSU-lZ-7mf">
+                                <rect key="frame" x="40" y="244" width="520" height="40"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="DaG-EN-2lH"/>
+                                </constraints>
+                                <state key="normal" title="UIDocumentInteractionController (PDF)"/>
+                                <connections>
+                                    <action selector="presentPDFDocumentInteraction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8m0-Q1-y1a"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZI8-te-ohd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="6vf-jn-7Xg"/>
+                            <constraint firstAttribute="trailing" secondItem="ZI8-te-ohd" secondAttribute="trailing" constant="40" id="88p-0h-xLQ"/>
+                            <constraint firstItem="ZI8-te-ohd" firstAttribute="top" secondItem="fGQ-Pe-kGP" secondAttribute="bottom" constant="40" id="IAI-M6-Qum"/>
+                            <constraint firstItem="DSU-lZ-7mf" firstAttribute="top" secondItem="ZI8-te-ohd" secondAttribute="bottom" constant="40" id="W7o-3A-ybv"/>
+                            <constraint firstAttribute="trailing" secondItem="DSU-lZ-7mf" secondAttribute="trailing" constant="40" id="doh-JT-hIt"/>
+                            <constraint firstItem="DSU-lZ-7mf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="jER-xP-k3a"/>
+                            <constraint firstAttribute="trailing" secondItem="fGQ-Pe-kGP" secondAttribute="trailing" constant="40" id="nOg-rh-qit"/>
+                            <constraint firstItem="fGQ-Pe-kGP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="xtO-h8-LWg"/>
+                            <constraint firstItem="fGQ-Pe-kGP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="z90-eJ-Eiw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Test " id="F61-hh-fLM"/>
+                    <connections>
+                        <outlet property="activityButton" destination="fGQ-Pe-kGP" id="AFM-Oa-UpR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1949" y="421"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="NfL-Jg-adB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rEW-Uv-lcG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="QZx-D7-YgW"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QMG-KN-F4w">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="IYh-VM-pTf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CP7-hx-LT7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1152" y="429"/>
+        </scene>
+    </scenes>
+</document>
