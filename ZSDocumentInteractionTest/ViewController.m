@@ -10,7 +10,7 @@
 
 @interface ViewController ()
 
-@property (nonatomic, retain) UIDocumentInteractionController *documentController;
+@property (nonatomic, strong) UIDocumentInteractionController *documentController;
 
 @end
 
@@ -30,21 +30,37 @@
 #pragma mark -
 #pragma mark IBAction method
 
-- (IBAction)presentActivityView:(id)sender {
-    
-}
+/** 'NSInternalInconsistencyException', reason: 'UIDocumentInteractionController has gone away prematurely!'
 
-- (IBAction)presentPGNDocumentInteraction:(id)sender {
-    _documentController = [UIDocumentInteractionController interactionControllerWithURL:[[NSBundle mainBundle] URLForResource:@"Launcher@3x" withExtension:@"png"]];
-}
+ - (IBAction)presentPDFDocumentInteraction:(id)sender {
+ 
+ UIDocumentInteractionController *documentController = [UIDocumentInteractionController interactionControllerWithURL:[[NSBundle mainBundle] URLForResource:@"Steve" withExtension:@"pdf"]];
+ [documentController presentOpenInMenuFromRect:self.view.bounds inView:self.view animated:YES];
+ }
+
+ */
+
 
 - (IBAction)presentPDFDocumentInteraction:(id)sender {
     
     _documentController = [UIDocumentInteractionController interactionControllerWithURL:[[NSBundle mainBundle] URLForResource:@"Steve" withExtension:@"pdf"]];
+    _documentController.delegate = self;
+    
+//    [self presentOpenInMenu];
+    
+    [self presentOptionsMenu];
+    
+//    [self presentPreview];
 }
 
 #pragma mark -
 #pragma mark private
+
+- (void)presentPreview
+{
+    // display PDF contents by Quick Look framework
+    [self.documentController presentPreviewAnimated:YES];
+}
 
 - (void)presentOpenInMenu
 {
@@ -64,11 +80,6 @@
 - (UIViewController *)documentInteractionControllerViewControllerForPreview:(UIDocumentInteractionController *)controller
 {
     return self;
-}
-
-- (UIView *)documentInteractionControllerViewForPreview:(UIDocumentInteractionController *)controller
-{
-    return self.view;
 }
 
 @end

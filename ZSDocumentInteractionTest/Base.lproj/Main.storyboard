@@ -17,33 +17,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGQ-Pe-kGP">
-                                <rect key="frame" x="40" y="84" width="520" height="40"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="Hcx-pK-KeJ"/>
-                                </constraints>
-                                <state key="normal" title="UIActivityViewController"/>
-                                <connections>
-                                    <action selector="presentActivityView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cuK-YK-6rs"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZI8-te-ohd">
-                                <rect key="frame" x="40" y="164" width="520" height="40"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="6lI-9X-vl7"/>
-                                </constraints>
-                                <state key="normal" title="UIDocumentInteractionController (PNG)"/>
-                                <connections>
-                                    <action selector="presentPGNDocumentInteraction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9kJ-vy-yWp"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DSU-lZ-7mf">
-                                <rect key="frame" x="40" y="244" width="520" height="40"/>
+                                <rect key="frame" x="20" y="104" width="560" height="40"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="DaG-EN-2lH"/>
+                                    <constraint firstAttribute="height" constant="40" id="ATw-UK-U9o"/>
                                 </constraints>
                                 <state key="normal" title="UIDocumentInteractionController (PDF)"/>
                                 <connections>
@@ -53,21 +31,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ZI8-te-ohd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="6vf-jn-7Xg"/>
-                            <constraint firstAttribute="trailing" secondItem="ZI8-te-ohd" secondAttribute="trailing" constant="40" id="88p-0h-xLQ"/>
-                            <constraint firstItem="ZI8-te-ohd" firstAttribute="top" secondItem="fGQ-Pe-kGP" secondAttribute="bottom" constant="40" id="IAI-M6-Qum"/>
-                            <constraint firstItem="DSU-lZ-7mf" firstAttribute="top" secondItem="ZI8-te-ohd" secondAttribute="bottom" constant="40" id="W7o-3A-ybv"/>
-                            <constraint firstAttribute="trailing" secondItem="DSU-lZ-7mf" secondAttribute="trailing" constant="40" id="doh-JT-hIt"/>
-                            <constraint firstItem="DSU-lZ-7mf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="jER-xP-k3a"/>
-                            <constraint firstAttribute="trailing" secondItem="fGQ-Pe-kGP" secondAttribute="trailing" constant="40" id="nOg-rh-qit"/>
-                            <constraint firstItem="fGQ-Pe-kGP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="xtO-h8-LWg"/>
-                            <constraint firstItem="fGQ-Pe-kGP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="z90-eJ-Eiw"/>
+                            <constraint firstAttribute="trailing" secondItem="DSU-lZ-7mf" secondAttribute="trailing" constant="20" id="YwL-8l-gcM"/>
+                            <constraint firstItem="DSU-lZ-7mf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="bUF-7m-zcy"/>
+                            <constraint firstItem="DSU-lZ-7mf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="mRU-nN-T5V"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Test " id="F61-hh-fLM"/>
-                    <connections>
-                        <outlet property="activityButton" destination="fGQ-Pe-kGP" id="AFM-Oa-UpR"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

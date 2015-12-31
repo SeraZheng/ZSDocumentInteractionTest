@@ -13,7 +13,6 @@
 		973C644E1C328B55005F2CDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 973C644C1C328B55005F2CDD /* Main.storyboard */; };
 		973C64501C328B55005F2CDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 973C644F1C328B55005F2CDD /* Assets.xcassets */; };
 		973C64531C328B55005F2CDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 973C64511C328B55005F2CDD /* LaunchScreen.storyboard */; };
-		973C645B1C329A55005F2CDD /* Launcher@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 973C645A1C329A55005F2CDD /* Launcher@3x.png */; };
 		973C647F1C33CE38005F2CDD /* Steve.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 973C647E1C33CE38005F2CDD /* Steve.pdf */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +27,6 @@
 		973C644F1C328B55005F2CDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		973C64521C328B55005F2CDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		973C64541C328B55005F2CDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		973C645A1C329A55005F2CDD /* Launcher@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Launcher@3x.png"; path = "Resource/Launcher@3x.png"; sourceTree = SOURCE_ROOT; };
 		973C647E1C33CE38005F2CDD /* Steve.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Steve.pdf; path = Resource/Steve.pdf; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -79,7 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				973C64441C328B55005F2CDD /* main.m */,
-				973C645A1C329A55005F2CDD /* Launcher@3x.png */,
 				973C647E1C33CE38005F2CDD /* Steve.pdf */,
 			);
 			name = "Supporting Files";
@@ -146,7 +143,6 @@
 				973C64501C328B55005F2CDD /* Assets.xcassets in Resources */,
 				973C647F1C33CE38005F2CDD /* Steve.pdf in Resources */,
 				973C644E1C328B55005F2CDD /* Main.storyboard in Resources */,
-				973C645B1C329A55005F2CDD /* Launcher@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
