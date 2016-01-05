@@ -14,6 +14,7 @@
 		973C64501C328B55005F2CDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 973C644F1C328B55005F2CDD /* Assets.xcassets */; };
 		973C64531C328B55005F2CDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 973C64511C328B55005F2CDD /* LaunchScreen.storyboard */; };
 		973C647F1C33CE38005F2CDD /* Steve.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 973C647E1C33CE38005F2CDD /* Steve.pdf */; };
+		97545FCB1C3A59DB00120C83 /* ZSCustomActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 97545FCA1C3A59DB00120C83 /* ZSCustomActivity.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		973C64521C328B55005F2CDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		973C64541C328B55005F2CDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		973C647E1C33CE38005F2CDD /* Steve.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Steve.pdf; path = Resource/Steve.pdf; sourceTree = SOURCE_ROOT; };
+		97545FC91C3A59DB00120C83 /* ZSCustomActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSCustomActivity.h; sourceTree = "<group>"; };
+		97545FCA1C3A59DB00120C83 /* ZSCustomActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSCustomActivity.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +72,8 @@
 				973C64511C328B55005F2CDD /* LaunchScreen.storyboard */,
 				973C64541C328B55005F2CDD /* Info.plist */,
 				973C64431C328B55005F2CDD /* Supporting Files */,
+				97545FC91C3A59DB00120C83 /* ZSCustomActivity.h */,
+				97545FCA1C3A59DB00120C83 /* ZSCustomActivity.m */,
 			);
 			path = ZSDocumentInteractionTest;
 			sourceTree = "<group>";
@@ -113,6 +118,7 @@
 				TargetAttributes = {
 					973C643F1C328B54005F2CDD = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = SV68LJV3A7;
 					};
 				};
 			};
@@ -155,6 +161,7 @@
 			files = (
 				973C644B1C328B55005F2CDD /* ViewController.m in Sources */,
 				973C64481C328B55005F2CDD /* AppDelegate.m in Sources */,
+				97545FCB1C3A59DB00120C83 /* ZSCustomActivity.m in Sources */,
 				973C64451C328B55005F2CDD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,11 +272,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ZSDocumentInteractionTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cc.icoc.shaobozheng.ZSDocumentInteractionTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -277,11 +286,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ZSDocumentInteractionTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cc.icoc.shaobozheng.ZSDocumentInteractionTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>HC95829AR4.cc.icoc.shaobozheng.ZSDocumentInteractionTest</string>
+	<string>SV68LJV3A7.cc.icoc.shaobozheng.ZSDocumentInteractionTest</string>
 	<key>com.apple.developer.team-identifier</key>
-	<string>USHHCEAM6M</string>
+	<string>SV68LJV3A7</string>
 	<key>get-task-allow</key>
 	<true/>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>HC95829AR4.cc.icoc.shaobozheng.ZSDocumentInteractionTest</string>
+		<string>SV68LJV3A7.cc.icoc.shaobozheng.ZSDocumentInteractionTest</string>
 	</array>
 </dict>
 </plist>

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ZSCustomActivity.h"
 
 @interface ViewController ()
 
@@ -15,17 +16,6 @@
 @end
 
 @implementation ViewController
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 #pragma mark -
 #pragma mark IBAction method
@@ -51,6 +41,26 @@
     [self presentOptionsMenu];
     
 //    [self presentPreview];
+}
+
+
+- (IBAction)presentPDFActivityView:(id)sender {
+    
+    UIActivityViewController *activity = [[UIActivityViewController alloc] initWithActivityItems:@[[[NSBundle mainBundle] URLForResource:@"Steve" withExtension:@"pdf"]] applicationActivities:@[[[ZSCustomActivity alloc] init]]];
+    
+    // hide AirDrop
+    // activity.excludedActivityTypes = @[UIActivityTypeAirDrop];
+    
+    // incorrect usage
+    // [self.navigationController pushViewController:activity animated:YES];
+    
+    UIPopoverPresentationController *popover = activity.popoverPresentationController;
+    if (popover) {
+        popover.sourceView = self.activityButton;
+        popover.permittedArrowDirections = UIPopoverArrowDirectionUp;
+    }
+    
+    [self presentViewController:activity animated:YES completion:NULL];
 }
 
 #pragma mark -

@@ -28,15 +28,34 @@
                                     <action selector="presentPDFDocumentInteraction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8m0-Q1-y1a"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VXg-UA-bc8">
+                                <rect key="frame" x="20" y="184" width="560" height="40"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5Ht-9j-d9O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="UIActivityViewController(PDF)"/>
+                                <connections>
+                                    <action selector="presentPDFActivityView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hDQ-5D-umm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="VXg-UA-bc8" firstAttribute="top" secondItem="DSU-lZ-7mf" secondAttribute="bottom" constant="40" id="DnZ-QY-TP5"/>
+                            <constraint firstAttribute="trailing" secondItem="VXg-UA-bc8" secondAttribute="trailing" constant="20" id="R7j-UR-lfH"/>
+                            <constraint firstItem="DSU-lZ-7mf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="SkZ-E7-4gM"/>
                             <constraint firstAttribute="trailing" secondItem="DSU-lZ-7mf" secondAttribute="trailing" constant="20" id="YwL-8l-gcM"/>
-                            <constraint firstItem="DSU-lZ-7mf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="bUF-7m-zcy"/>
+                            <constraint firstItem="VXg-UA-bc8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="eas-oi-OPq"/>
                             <constraint firstItem="DSU-lZ-7mf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="mRU-nN-T5V"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Test " id="F61-hh-fLM"/>
+                    <connections>
+                        <outlet property="activityButton" destination="VXg-UA-bc8" id="zqS-Ob-gaF"/>
+                        <outlet property="documentInteractionButton" destination="DSU-lZ-7mf" id="Ifn-yp-qme"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -66,6 +85,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CP7-hx-LT7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1152" y="429"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aLf-qJ-U9p">
+            <objects>
+                <viewController id="l5J-WM-GbM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LhR-sZ-Vus"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qhv-6s-0gd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="of9-87-RCN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KWk-Wf-ttP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2663" y="834"/>
         </scene>
     </scenes>
 </document>
