@@ -15,7 +15,34 @@
 		973C64531C328B55005F2CDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 973C64511C328B55005F2CDD /* LaunchScreen.storyboard */; };
 		973C647F1C33CE38005F2CDD /* Steve.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 973C647E1C33CE38005F2CDD /* Steve.pdf */; };
 		97545FCB1C3A59DB00120C83 /* ZSCustomActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 97545FCA1C3A59DB00120C83 /* ZSCustomActivity.m */; };
+		FC56B8511D20D62200C03C16 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC56B8501D20D62200C03C16 /* ShareViewController.swift */; };
+		FC56B8541D20D62300C03C16 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC56B8521D20D62300C03C16 /* MainInterface.storyboard */; };
+		FC56B8581D20D62300C03C16 /* ZSShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FC56B84E1D20D62200C03C16 /* ZSShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC56B8561D20D62300C03C16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 973C64381C328B54005F2CDD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC56B84D1D20D62200C03C16;
+			remoteInfo = ZSShareExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FC56B85C1D20D62300C03C16 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FC56B8581D20D62300C03C16 /* ZSShareExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		973C64401C328B55005F2CDD /* ZSDocumentInteractionTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZSDocumentInteractionTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -31,10 +58,22 @@
 		973C647E1C33CE38005F2CDD /* Steve.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Steve.pdf; path = Resource/Steve.pdf; sourceTree = SOURCE_ROOT; };
 		97545FC91C3A59DB00120C83 /* ZSCustomActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSCustomActivity.h; sourceTree = "<group>"; };
 		97545FCA1C3A59DB00120C83 /* ZSCustomActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSCustomActivity.m; sourceTree = "<group>"; };
+		FC56B84E1D20D62200C03C16 /* ZSShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ZSShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC56B8501D20D62200C03C16 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		FC56B8531D20D62300C03C16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		FC56B8551D20D62300C03C16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC56B85D1D210F8B00C03C16 /* ZSDocumentInteractionTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ZSDocumentInteractionTest.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		973C643D1C328B54005F2CDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC56B84B1D20D62200C03C16 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -48,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				973C64421C328B55005F2CDD /* ZSDocumentInteractionTest */,
+				FC56B84F1D20D62200C03C16 /* ZSShareExtension */,
 				973C64411C328B55005F2CDD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				973C64401C328B55005F2CDD /* ZSDocumentInteractionTest.app */,
+				FC56B84E1D20D62200C03C16 /* ZSShareExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,6 +104,7 @@
 		973C64421C328B55005F2CDD /* ZSDocumentInteractionTest */ = {
 			isa = PBXGroup;
 			children = (
+				FC56B85D1D210F8B00C03C16 /* ZSDocumentInteractionTest.entitlements */,
 				973C64461C328B55005F2CDD /* AppDelegate.h */,
 				973C64471C328B55005F2CDD /* AppDelegate.m */,
 				973C64491C328B55005F2CDD /* ViewController.h */,
@@ -87,6 +129,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FC56B84F1D20D62200C03C16 /* ZSShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				FC56B8501D20D62200C03C16 /* ShareViewController.swift */,
+				FC56B8521D20D62300C03C16 /* MainInterface.storyboard */,
+				FC56B8551D20D62300C03C16 /* Info.plist */,
+			);
+			path = ZSShareExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -97,15 +149,34 @@
 				973C643C1C328B54005F2CDD /* Sources */,
 				973C643D1C328B54005F2CDD /* Frameworks */,
 				973C643E1C328B54005F2CDD /* Resources */,
+				FC56B85C1D20D62300C03C16 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FC56B8571D20D62300C03C16 /* PBXTargetDependency */,
 			);
 			name = ZSDocumentInteractionTest;
 			productName = ZSDocumentInteractionTest;
 			productReference = 973C64401C328B55005F2CDD /* ZSDocumentInteractionTest.app */;
 			productType = "com.apple.product-type.application";
+		};
+		FC56B84D1D20D62200C03C16 /* ZSShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC56B85B1D20D62300C03C16 /* Build configuration list for PBXNativeTarget "ZSShareExtension" */;
+			buildPhases = (
+				FC56B84A1D20D62200C03C16 /* Sources */,
+				FC56B84B1D20D62200C03C16 /* Frameworks */,
+				FC56B84C1D20D62200C03C16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZSShareExtension;
+			productName = ZSShareExtension;
+			productReference = FC56B84E1D20D62200C03C16 /* ZSShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -113,12 +184,22 @@
 		973C64381C328B54005F2CDD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Sera;
 				TargetAttributes = {
 					973C643F1C328B54005F2CDD = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = SV68LJV3A7;
+						DevelopmentTeam = ECMSPS493X;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					FC56B84D1D20D62200C03C16 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = ECMSPS493X;
 					};
 				};
 			};
@@ -136,6 +217,7 @@
 			projectRoot = "";
 			targets = (
 				973C643F1C328B54005F2CDD /* ZSDocumentInteractionTest */,
+				FC56B84D1D20D62200C03C16 /* ZSShareExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -149,6 +231,14 @@
 				973C64501C328B55005F2CDD /* Assets.xcassets in Resources */,
 				973C647F1C33CE38005F2CDD /* Steve.pdf in Resources */,
 				973C644E1C328B55005F2CDD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC56B84C1D20D62200C03C16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC56B8541D20D62300C03C16 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,7 +256,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FC56B84A1D20D62200C03C16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC56B8511D20D62200C03C16 /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC56B8571D20D62300C03C16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC56B84D1D20D62200C03C16 /* ZSShareExtension */;
+			targetProxy = FC56B8561D20D62300C03C16 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		973C644C1C328B55005F2CDD /* Main.storyboard */ = {
@@ -183,6 +289,14 @@
 				973C64521C328B55005F2CDD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FC56B8521D20D62300C03C16 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC56B8531D20D62300C03C16 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -272,12 +386,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ZSDocumentInteractionTest/ZSDocumentInteractionTest.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = ZSDocumentInteractionTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cc.icoc.shaobozheng.ZSDocumentInteractionTest;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.serazheng.ZSDocumentInteractionTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -286,13 +404,50 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ZSDocumentInteractionTest/ZSDocumentInteractionTest.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = ZSDocumentInteractionTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cc.icoc.shaobozheng.ZSDocumentInteractionTest;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.serazheng.ZSDocumentInteractionTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FC56B8591D20D62300C03C16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: 462970213@qq.com (2HTWT7B5A6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 462970213@qq.com (2HTWT7B5A6)";
+				INFOPLIST_FILE = ZSShareExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.serazheng.ZSDocumentInteractionTest.ZSShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FC56B85A1D20D62300C03C16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				INFOPLIST_FILE = ZSShareExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.serazheng.ZSDocumentInteractionTest.ZSShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -316,6 +471,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		FC56B85B1D20D62300C03C16 /* Build configuration list for PBXNativeTarget "ZSShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC56B8591D20D62300C03C16 /* Debug */,
+				FC56B85A1D20D62300C03C16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
